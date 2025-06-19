@@ -7,30 +7,30 @@ namespace RuyaManavSwitch
         static void Main(string[] args)
         {
             Console.Write("Hangi meyveyi almak istiyorsunuz? (elma, armut, çilek, muz, diğer): ");
-            string? meyve = Console.ReadLine()?.ToLower(); // Harf duyarlılığı giderildi
+            string? fruit = Console.ReadLine()?.ToLower(); // Harf duyarlılığı giderildi
 
-            int fiyat;
+            int price;
 
-            switch (meyve)
+            switch (fruit)
             {
                 case "elma":
-                    fiyat = 2;
+                    price = 2;
                     break;
                 case "armut":
-                    fiyat = 3;
+                    price = 3;
                     break;
                 case "çilek":
-                    fiyat = 2;
+                    price = 2;
                     break;
                 case "muz":
-                    fiyat = 3;
+                    price = 3;
                     break;
                 default:
-                    fiyat = 4;
+                    price = 4;
                     break;
             }
 
-            Console.WriteLine($"Seçtiğiniz meyve: {meyve} - Fiyat: {fiyat} TL");
+            Console.WriteLine($"Seçtiğiniz meyve: {fruit} - fiyat: {price} TL");
 
             /*
                 Bu tür bir senaryoda switch-case kullanmak daha uygun olur.
