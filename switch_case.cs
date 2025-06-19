@@ -31,6 +31,19 @@ namespace RuyaManavSwitch
             }
 
             Console.WriteLine($"Seçtiğiniz meyve: {meyve} - Fiyat: {fiyat} TL");
+
+            /*
+                Bu tür bir senaryoda switch-case kullanmak daha uygun olur.
+
+                Çünkü:
+                - Değişkenin farklı sabit değerlere göre kontrolü isteniyor.
+                - switch-case yapısı bu tür sabit karşılaştırmalarda daha temiz, okunaklı ve performanslıdır.
+                - Yeni meyve eklemek çok daha kolaydır.
+
+                if-else yapısı daha çok koşullar ve daha karmaşık mantıklar için tercih edilmelidir.
+            */
+
         }
     }
 }
+
